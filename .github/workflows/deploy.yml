@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # 如果您有設定 Secret 的話
+          VITE_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} # 使用 OpenAI API Key
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
